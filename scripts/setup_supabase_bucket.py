@@ -1,10 +1,10 @@
 import psycopg2
 
 conn = psycopg2.connect(
-    host="aws-1-ap-southeast-2.pooler.supabase.com",
+    host="aws-0-ap-southeast-1.pooler.supabase.com",
     port=5432,
-    user="postgres.nejipbxcitinjrzyykmi",
-    password="stUrecs4ED8!",
+    user="postgres.nandhpzabmbrtiigyhhc",
+    password="savetoolsNow8!",
     database="postgres"
 )
 cur = conn.cursor()
@@ -16,5 +16,5 @@ ON CONFLICT (id) DO NOTHING;
 conn.commit()
 
 cur.execute("SELECT id, name, public FROM storage.buckets;")
-print("Supabase Storage Buckets:", cur.fetchall())
+print("New Supabase Storage Buckets:", cur.fetchall())
 conn.close()

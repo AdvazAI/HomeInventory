@@ -12,7 +12,9 @@ env_files = [
 
 class Settings(BaseSettings):
     DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/home_inventory"
-    DB_SCHEMA: str = "home_inventory"
+    DB_SCHEMA: str = "public"
+    SUPABASE_PROJECT_REF: str = "nandhpzabmbrtiigyhhc"
+    SUPABASE_URL: str = "https://nandhpzabmbrtiigyhhc.supabase.co"
 
     CF_ACCOUNT_ID: str = ""
     CF_ZONE_DOMAIN: str = "advaz.au"
