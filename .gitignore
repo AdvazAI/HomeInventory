@@ -1,0 +1,62 @@
+# Environment & Secret Variables (CRITICAL: Never commit .env with real passwords/keys)
+.env
+*.env
+!.env.example
+*.key
+*.pem
+*.jks
+*.keystore
+
+# Python virtualenvs
+env/
+venv/
+ENV/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Flutter & Dart artifacts
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+frontend/.dart_tool/
+frontend/build/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.packages
+*.apk
+*.aab
+
+# OS & Temp Files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+screen*.png
+capture*.ps1
+tabs_output.txt
+play_output.txt
+supabase_tabs.txt
+now_tabs.txt
+select_out.txt
+
+# Local uploads
+static/uploads/*
+!static/uploads/.gitkeep
+backend/static/uploads/*
+!backend/static/uploads/.gitkeep
