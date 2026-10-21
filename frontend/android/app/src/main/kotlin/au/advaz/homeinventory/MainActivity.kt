@@ -1,4 +1,4 @@
-package com.freedom.homeinventory.home_inventory
+package au.advaz.homeinventory
 
 import io.flutter.embedding.android.FlutterActivity
 
