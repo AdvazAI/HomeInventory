@@ -39,8 +39,8 @@ if (Test-Path $envPath) {
 }
 $envArg = if ($envVars.Count -gt 0) { "--set-env-vars `"" + ($envVars -join ",") + "`"" } else { "" }
 
-# 2. Build backend Docker image with Google Cloud Build
-$ImageTag = "gcr.io/$ProjectId/home-inventory-backend:latest"
+# 2. Build backend Docker image with Google Cloud Build & Artifact Registry
+$ImageTag = "australia-southeast1-docker.pkg.dev/$ProjectId/cloud-run-source-deploy/home-inventory-backend:latest"
 Write-Host "`n[*] Building container image via Google Cloud Build: $ImageTag ..." -ForegroundColor Yellow
 $backendDir = Join-Path $PSScriptRoot "..\backend"
 gcloud builds submit $backendDir --tag $ImageTag --project $ProjectId

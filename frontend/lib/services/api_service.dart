@@ -12,7 +12,7 @@ class ApiService {
       return customHost!;
     }
     if (kReleaseMode) {
-      return 'https://homeinv.advaz.au';
+      return 'https://home-inventory-backend-127693243494.australia-southeast1.run.app';
     }
     if (kIsWeb) {
       return 'http://localhost:8000';
